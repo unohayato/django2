@@ -2,5 +2,6 @@
 {% load static %}
 {% block main %}
   <h1>ホーム</h1>
-  <img src="{% static 'welcome.jpg' %}" alt="">
+  <h1>{{ username }}さんようこそ！</h1>
+  <img src="{% static 'welcome.jpg' %}" alt="image">
 {% endblock main %}
