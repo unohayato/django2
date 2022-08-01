@@ -4,7 +4,7 @@
 {% block main %}
   <h1>自己紹介</h1>
   <h2>実績</h2>
-  <p>これまでに{{ num_services|intcomma }}個のサービスを作りました</p>
+  <p>{% now "Y年m月d日 H時i分" %}現在までに{{ num_services|intcomma }}個のサービスを作りました</p>
   <ul>
     {% for skill in skills %}
     <li>{{ skill }}</li>
